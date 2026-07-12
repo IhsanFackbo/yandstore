@@ -1,37 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Laundry Ku</title>
+    <title>TokoKu — Yandx Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+<div class="noise-layer"></div>
 
 <header>
     <div class="header-content">
-        <h1>🧼 TokoKu</h1>
-        <p>Produk Produk terpercaya dan aman dari penipuan!</p>
+        <div class="brand">
+            <span class="brand-mark">◈</span>
+            <div>
+                <h1>TokoKu<span class="brand-dot">.</span></h1>
+                <p class="tagline">Produk digital terpercaya &amp; aman dari penipuan</p>
+            </div>
+        </div>
+        <div class="trust-chip">
+            <span class="chip-pulse"></span>
+            Toko terverifikasi
+        </div>
     </div>
 </header>
 
 <section class="banner">
+    <div class="banner-grid"></div>
     <div class="banner-content">
-        <h2>✨ Yandx Store ✨</h2>
-        <p>Produk digital murah meriah</p>
-        <p class="banner-subtext">Diandalkan oleh ribuan pelanggan setia</p>
+        <span class="eyebrow">// yandx store</span>
+        <h2>Produk digital,<br>harga bersahabat.</h2>
+        <p class="banner-subtext">Diandalkan oleh ribuan pelanggan setia di seluruh Indonesia</p>
+        <div class="banner-stats">
+            <div class="stat">
+                <strong>1.200+</strong>
+                <span>Pelanggan aktif</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <strong>4.9<span class="stat-star">★</span></strong>
+                <span>Rating rata-rata</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <strong>&lt;5 mnt</strong>
+                <span>Proses pengiriman</span>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- ========== TOOLS SECTION ========== -->
 <section class="tools-section">
-    <h2 class="tools-title">🛠️ Tools Berguna</h2>
-    
+    <div class="section-heading">
+        <span class="eyebrow">// utilitas</span>
+        <h2 class="tools-title">Tools Berguna</h2>
+    </div>
+
     <div class="tools-container">
         <!-- Tool 1: Search Produk -->
         <div class="tool-card">
-            <h3>🔍 Cari Produk</h3>
+            <div class="tool-icon">⌕</div>
+            <h3>Cari Produk</h3>
             <input type="text" id="searchInput" placeholder="Cari nama produk..." class="tool-input">
             <button onclick="searchProduk()" class="tool-btn">Cari</button>
             <p id="searchResult" class="tool-result"></p>
@@ -39,7 +73,8 @@
 
         <!-- Tool 2: Kalkulator Diskon -->
         <div class="tool-card">
-            <h3>💰 Hitung Diskon</h3>
+            <div class="tool-icon">%</div>
+            <h3>Hitung Diskon</h3>
             <input type="number" id="hargaAsli" placeholder="Harga asli (Rp)" class="tool-input">
             <input type="number" id="diskonPersen" placeholder="Diskon (%)" class="tool-input" max="100">
             <button onclick="hitungDiskon()" class="tool-btn">Hitung</button>
@@ -48,7 +83,8 @@
 
         <!-- Tool 3: Konversi Harga -->
         <div class="tool-card">
-            <h3>💵 Konversi Harga</h3>
+            <div class="tool-icon">⇄</div>
+            <h3>Konversi Harga</h3>
             <input type="number" id="rupiahInput" placeholder="Masukkan Rp" class="tool-input">
             <select id="currencySelect" class="tool-input">
                 <option value="usd">USD ($)</option>
@@ -62,79 +98,103 @@
 
         <!-- Tool 4: Keranjang Belanja -->
         <div class="tool-card">
-            <h3>🛒 Keranjang</h3>
+            <div class="tool-icon">🛒</div>
+            <h3>Keranjang</h3>
             <button onclick="lihatKeranjang()" class="tool-btn">Lihat Keranjang (<span id="cartCount">0</span>)</button>
             <div id="cartPreview" class="tool-result"></div>
         </div>
     </div>
 </section>
 
-<h2 class="judul">🛍️ Produk Kami</h2>
-
-
-<div class="produk-container">
-
-    <div class="produk">
-        <img src="https://files.catbox.moe/c1kfx4.jpg">
-        <h3>Nokos Indonesia</h3>
-        <p class="harga">Rp5.000</p>
-        <p class="deskripsi">Khusus whatsaap untuk sebagai cadanga, tempat bot, atau sebagai akun kerja anda!</p>
-        <div class="rating">⭐⭐⭐⭐⭐ (24 ulasan)</div>
-        <button onclick="tambahKeranjang('Nokos Indonesia', 5000)">
-            🛒 Pesan Sekarang
-        </button>
+<section class="produk-section">
+    <div class="section-heading">
+        <span class="eyebrow">// katalog</span>
+        <h2 class="judul">Produk Kami</h2>
     </div>
 
+    <div class="produk-container">
 
-    <div class="produk">
-        <img src="https://files.catbox.moe/xal0ob.jpg">
-        <h3>🌸 Alight Motion Prem</h3>
-        <p class="harga">Rp5.000</p>
-        <p class="deskripsi">Aplikasi Alight Motion premium untuk gunakan alat dan tool yang terkunci oleh akses premium</p>
-        <div class="rating">⭐⭐⭐⭐⭐ (18 ulasan)</div>
-        <button onclick="tambahKeranjang('Alight Motion Premium', 5000)">
-            🛒 Pesan Sekarang
-        </button>
+        <div class="produk">
+            <div class="produk-img-wrap">
+                <img src="https://files.catbox.moe/c1kfx4.jpg" alt="Nokos Indonesia" loading="lazy">
+                <span class="badge badge-new">Terlaris</span>
+            </div>
+            <div class="produk-body">
+                <h3>Nokos Indonesia</h3>
+                <p class="deskripsi">Khusus WhatsApp untuk sebagai cadangan, tempat bot, atau sebagai akun kerja anda!</p>
+                <div class="rating">★★★★★ <span class="rating-count">(24 ulasan)</span></div>
+                <div class="produk-footer">
+                    <p class="harga">Rp5.000</p>
+                    <button onclick="tambahKeranjang('Nokos Indonesia', 5000)" class="beli-btn">
+                        Pesan Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produk">
+            <div class="produk-img-wrap">
+                <img src="https://files.catbox.moe/xal0ob.jpg" alt="Alight Motion Premium" loading="lazy">
+            </div>
+            <div class="produk-body">
+                <h3>🌸 Alight Motion Prem</h3>
+                <p class="deskripsi">Aplikasi Alight Motion premium untuk gunakan alat dan tool yang terkunci oleh akses premium</p>
+                <div class="rating">★★★★★ <span class="rating-count">(18 ulasan)</span></div>
+                <div class="produk-footer">
+                    <p class="harga">Rp5.000</p>
+                    <button onclick="tambahKeranjang('Alight Motion Premium', 5000)" class="beli-btn">
+                        Pesan Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produk">
+            <div class="produk-img-wrap">
+                <img src="https://files.catbox.moe/bybxzi.png" alt="Script Denia premium group" loading="lazy">
+                <span class="badge badge-diskon">-42%</span>
+            </div>
+            <div class="produk-body">
+                <h3>Script Denia Premium Group</h3>
+                <p class="deskripsi">Script siap pakai untuk grup premium, lengkap dan mudah diintegrasikan.</p>
+                <div class="rating">★★★★★ <span class="rating-count">(42 ulasan)</span></div>
+                <div class="produk-footer">
+                    <p class="harga"><del>Rp50.000</del> Rp29.000</p>
+                    <button onclick="tambahKeranjang('Script Denia premium group', 29000)" class="beli-btn">
+                        Pesan Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
-    <div class="produk">
-        <img src="https://files.catbox.moe/bybxzi.png">
-        <h3>Script Denia premium group</h3>
-        <p class="harga"><del>Rp50.000</del> Rp29.000</p>
-        <div class="rating">⭐⭐⭐⭐⭐ (42 ulasan)</div>
-        <button onclick="tambahKeranjang('Script Denia premium group', 29000)">
-            🛒 Pesan Sekarang
-        </button>
-    </div>
-
-
-</div>
+</section>
 
 
 <footer>
     <div class="footer-content">
         <div class="footer-section">
-            <h4>📞 Hubungi Kami</h4>
+            <h4>Hubungi Kami</h4>
             <p>WhatsApp: 0812-3456-7890</p>
-            <p>Email: info@tololaundryku.com</p>
+            <p>Email: info@tokoku.com</p>
         </div>
         <div class="footer-section">
-            <h4>⏰ Jam Operasional</h4>
-            <p>Senin - Jumat: 09:00 - 18:00</p>
-            <p>Sabtu - Minggu: 10:00 - 17:00</p>
+            <h4>Jam Operasional</h4>
+            <p>Senin – Jumat: 09:00 – 18:00</p>
+            <p>Sabtu – Minggu: 10:00 – 17:00</p>
         </div>
         <div class="footer-section">
-            <h4>✅ Jaminan Kami</h4>
-            <p>Produk Asli & Original</p>
-            <p>Pengiriman Cepat & Aman</p>
+            <h4>Jaminan Kami</h4>
+            <p>✓ Produk Asli &amp; Original</p>
+            <p>✓ Pengiriman Cepat &amp; Aman</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2026 Toko Laundry Ku - Produk Laundry Terpercaya</p>
+        <p>&copy; 2026 TokoKu — Produk Digital Terpercaya</p>
     </div>
 </footer>
 
+<div id="toast" class="toast"></div>
 
 <script src="script.js"></script>
 
