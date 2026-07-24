@@ -49,7 +49,7 @@ const products: Product[] = [
     price: 5_000,
     image: "https://files.catbox.moe/c1kfx4.jpg",
     description:
-      "Nomor khusus WhatsApp untuk akun cadangan, tempat bot, atau akun kerja Anda.",
+      "Nomor khusus WhatsApp untuk akun cadangan, tempat bot, atau akun kerja Anda. Di jamin aman",
     reviews: 24,
     badge: "Terlaris",
     badgeTone: "new",
