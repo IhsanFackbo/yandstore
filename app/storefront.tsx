@@ -567,7 +567,7 @@ export default function Storefront({
           </div>
           <div className="footer-section">
             <h4>Hubungi kami</h4>
-            <p>WhatsApp: 0812-3456-7890</p>
+            <p>WhatsApp: 0812-6225-3187</p>
             <p>Email: info@tokoku.com</p>
           </div>
           <div className="footer-section">
