@@ -58,7 +58,7 @@ const products: Product[] = [
     id: 2,
     name: "Alight Motion Premium",
     shortName: "Alight Motion Prem",
-    price: 5_000,
+    price: 2_000,
     image: "https://files.catbox.moe/xal0ob.jpg",
     description:
       "Akses fitur dan tools premium Alight Motion yang sebelumnya terkunci.",
@@ -68,13 +68,13 @@ const products: Product[] = [
     id: 3,
     name: "Script Denia Premium Group",
     shortName: "Script Denia Premium Group",
-    price: 29_000,
+    price: 24_000,
     oldPrice: 50_000,
     image: "https://files.catbox.moe/bybxzi.png",
     description:
       "Script siap pakai untuk grup premium, lengkap dan mudah diintegrasikan.",
-    reviews: 42,
-    badge: "-42%",
+    reviews:  52,
+    badge: "-52%",
     badgeTone: "discount",
   },
 ];
@@ -282,7 +282,7 @@ export default function Storefront({
         )}`,
       );
       setToast("Verifikasi berhasil. Membuka WhatsApp…");
-      window.open(`https://wa.me/6281234567890?text=${message}`, "_blank");
+      window.open(`https://wa.me/6281262253187?text=${message}`, "_blank");
       closeCart();
     } catch (error) {
       setVerificationError(
