@@ -85,8 +85,8 @@ const products: Product[] = [
     image: "https://files.catbox.moe/r7jrvc.jpg",
     description:
       "Script siap pakai, lengkap dan mudah diintegrasikan.",
-    badgeTone: "discount",
-  }
+    badgeTone: "new",
+  },
 ];
 
 const formatRupiah = (value: number) =>
