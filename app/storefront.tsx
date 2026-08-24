@@ -79,10 +79,22 @@ const products: Product[] = [
   },
    {
   id: 4,
-  name: "Preset Penjaga Hati",
+  name: "Preset Alight Motion 1",
   shortName: "Preset Penjaga Hati",
   price: 5_000,
   image: "https://files.catbox.moe/r7jrvc.jpg",
+  description:
+    "Preset Alight motion siap pakai, lengkap dan mudah diintegrasikan.",
+  reviews: 0,
+  badge: "Baru",
+  badgeTone: "new",
+},
+  {
+  id: 5,
+  name: "Preset Alight Motion 2",
+  shortName: "Preset Semua ku di rayakan",
+  price: 5_000,
+  image: "https://files.catbox.moe/gl0854.jpg",
   description:
     "Preset Alight motion siap pakai, lengkap dan mudah diintegrasikan.",
   reviews: 0,
