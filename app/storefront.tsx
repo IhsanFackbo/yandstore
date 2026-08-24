@@ -94,7 +94,7 @@ const products: Product[] = [
   name: "Preset Alight Motion 2",
   shortName: "Preset Semua ku di rayakan",
   price: 5_000,
-  image: "hhttps://h.uguu.se/ygmNgSci.jpg",
+  image: "https://h.uguu.se/ygmNgSci.jpg",
   description:
     "Preset Alight motion siap pakai, lengkap dan mudah diintegrasikan.",
   reviews: 0,
