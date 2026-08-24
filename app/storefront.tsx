@@ -77,6 +77,16 @@ const products: Product[] = [
     badge: "-52%",
     badgeTone: "discount",
   },
+   {
+    id: 4,
+    name: "Preset Penjaga Hati",
+    shortName: "Preset alightmotion",
+    price: 5_000,
+    image: "https://files.catbox.moe/r7jrvc.jpg",
+    description:
+      "Script siap pakai, lengkap dan mudah diintegrasikan.",
+    badgeTone: "discount",
+  }
 ];
 
 const formatRupiah = (value: number) =>
