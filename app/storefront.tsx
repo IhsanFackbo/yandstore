@@ -56,7 +56,7 @@ const products: Product[] = [
   },
   {
     id: 2,
-    name: "Alight Motion Premium",
+    name: "Alight Motion Premium Akun",
     shortName: "Alight Motion Prem",
     price: 2_000,
     image: "https://files.catbox.moe/xal0ob.jpg",
