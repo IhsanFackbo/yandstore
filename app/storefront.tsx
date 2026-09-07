@@ -79,8 +79,8 @@ const products: Product[] = [
   },
    {
   id: 4,
-  name: "Preset Alight Motion 1",
-  shortName: "Preset Penjaga Hati",
+  name: "Preset Penjaga Hati",
+  shortName: "Preset Alight Montion",
   price: 5_000,
   image: "https://files.catbox.moe/r7jrvc.jpg",
   description:
@@ -91,10 +91,10 @@ const products: Product[] = [
 },
   {
   id: 5,
-  name: "Preset Alight Motion 2",
-  shortName: "Preset Semua ku di rayakan",
+  name: "Preset Semua Aku Di Rayakan",
+  shortName: "Preset Alight Motion",
   price: 5_000,
-  image: "https://h.uguu.se/ygmNgSci.jpg",
+  image: "https://files.catbox.moe/svjsvv.jpg",
   description:
     "Preset Alight motion siap pakai, lengkap dan mudah diintegrasikan.",
   reviews: 0,
