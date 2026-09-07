@@ -306,7 +306,7 @@ export default function Storefront({
         )}`,
       );
       setToast("Verifikasi berhasil. Membuka WhatsApp…");
-      window.open(`https://wa.me/6281262253187?text=${message}`, "_blank");
+      window.open(`https://wa.me/6285124081626?text=${message}`, "_blank");
       closeCart();
     } catch (error) {
       setVerificationError(
