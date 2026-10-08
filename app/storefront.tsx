@@ -99,6 +99,18 @@ const products: Product[] = [
   image: "https://files.catbox.moe/svjsvv.jpg",
   description:
     "Preset Alight motion siap pakai, lengkap dan mudah diintegrasikan.",
+  reviews: 100,
+  badge: "Baru",
+  badgeTone: "new",
+},
+  {
+  id: 6,
+  name: "Preset Muak ▪︎ Aruma",
+  shortName: "Preset Alight Motion",
+  price: 6_000,
+  image: "https://files.catbox.moe/m5qj5u.jpg",
+  description:
+    "Preset Alight motion siap pakai, lengkap dan mudah diintegrasikan.",
   reviews: 0,
   badge: "Baru",
   badgeTone: "new",
