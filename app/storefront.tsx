@@ -82,7 +82,7 @@ const products: Product[] = [
    {
   id: 4,
   name: "Preset Penjaga Hati",
-  shortName: "Preset Alight Montion",
+  shortName: "Preset Penjaga hati Am",
   price: 5_000,
   image: "https://files.catbox.moe/r7jrvc.jpg",
   description:
@@ -94,7 +94,7 @@ const products: Product[] = [
   {
   id: 5,
   name: "Preset Semua Aku Di Rayakan",
-  shortName: "Preset Alight Motion",
+  shortName: "Preset Semua aku di rayakan Am",
   price: 5_000,
   image: "https://files.catbox.moe/svjsvv.jpg",
   description:
@@ -106,7 +106,7 @@ const products: Product[] = [
   {
   id: 6,
   name: "Preset Muak ▪︎ Aruma",
-  shortName: "Preset Alight Motion",
+  shortName: "Preset Muak ▪︎ Aruma Am",
   price: 6_000,
   image: "https://files.catbox.moe/m5qj5u.jpg",
   description:
