@@ -121,7 +121,7 @@ const products: Product[] = [
   shortName: "Preset The cure ▪︎ Am",
   price: 5_000,
   oldPrice: 8_000,
-  image: "public/images/guar.jpg",
+  image: "/images/guar.jpg",
   description:
     "Preset Alight motion siap pakai, lengkap dan mudah diintegrasikan.",
   reviews: 0,
