@@ -119,13 +119,14 @@ const products: Product[] = [
     id: 7,
   name: "Preset The cure",
   shortName: "Preset The cure ▪︎ Am",
-  price: 6_000,
+  price: 5_000,
+  oldPrice: 8_000,
   image: "https://files.catbox.moe/augtw8.jpg",
   description:
     "Preset Alight motion siap pakai, lengkap dan mudah diintegrasikan.",
   reviews: 0,
-  badge: "Baru",
-  badgeTone: "new",
+  badge: "-37,5%",
+  badgeTone: "discount",
 },
 ];
 
